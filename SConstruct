@@ -47,8 +47,6 @@ def GetEnvironment():
 
 # Get the common environment.
 env = GetEnvironment()
-env.Append(CPPPATH=['../extern/argtable-2.10/include'])
-env.Append(LIBPATH=['../extern/argtable-2.10/lib'])
 
 if SYSTEM == 'Darwin':
         env.Append(CPPPATH=['/opt/local/include/','../include'])
