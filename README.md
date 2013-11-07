@@ -47,4 +47,5 @@ where c is the vertex weight associated with this vertex, v_1, ...,  v_k are the
 
 Output Format
 ===========
-
+After the algorithms computed a matching the output matching of the graph will be written in a file called _matching_.
+Each line of the file contains a matching edge (node ids start from 0).
