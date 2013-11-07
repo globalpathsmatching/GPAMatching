@@ -87,6 +87,18 @@ int main(int argn, char **argv) {
                         } endfor
                 } 
         } endfor
-        cout <<  "cardinality: " <<  cardinality  << endl;
-        cout <<  "accumulated weight : " <<  fixed <<  accumulated_weight << endl;
+        cout <<  "number of matched nodes: " <<  cardinality  << endl;
+        cout <<  "accumulated weight (undirected matching weight) : " <<  fixed <<  accumulated_weight/2 << endl;
+
+        string outputfilename("matching");
+        ofstream f(outputfilename.c_str());
+        forall_nodes(G, node) {
+                if(matching[node] != node) {
+                        NodeID target = matching[node];
+                        if( node < target ) 
+                                f << node << " " << target << endl;
+                        } 
+        } endfor
+
+        f.close();
 }

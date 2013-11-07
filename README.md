@@ -41,9 +41,9 @@ The first line in the file contains either two integers, n m, or three integers,
 
 The remaining n lines of the file store information about the actual structure of the graph. In particular, the ith line (again excluding comment lines) contains information about the ith vertex. Depending on the value of f, the information stored in each line is somewhat different. In the most general form (when f=11, i.e. we have node and edge weights) each line has the following structure:
 
-       c\, v_1\, w_1\, v_2\, w_2 ../ v_k\, w_k 
+       c, v_1, w_1, v_2, w_2 .. v_k, w_k 
 
-where c is the vertex weight associated with this vertex, v_1, \ldots, v_k are the vertices adjacent to this vertex, and w_1, \ldots, w_k are the weights of the edges. Note that the vertices are numbered starting from 1 (not from 0). Furthermore, the vertex-weights must be integers greater or equal to 0, whereas the edge-weights must be strictly greater than 0.
+where c is the vertex weight associated with this vertex, v_1, ...,  v_k are the vertices adjacent to this vertex, and w_1, ..., w_k are the weights of the edges. Note that the vertices are numbered starting from 1 (not from 0). Furthermore, the vertex-weights must be integers greater or equal to 0, whereas the edge-weights must be strictly greater than 0.
 
 Output Format
 ===========
