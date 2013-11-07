@@ -33,7 +33,7 @@ Graph Format
 ===========
 
 The graph format used is the same as used by Metis, Chaco and the graph format that has been used during the 10th DIMACS Implementation Challenge on Graph Clustering and Partitioning. 
-The input graph has to be undirected, withoud self-loops and without parallel edges.
+The input graph has to be undirected, without self-loops and without parallel edges.
 
 To give a description of the graph format, we follow the description of the Metis 4.0 user guide very closely. A graph G=(V,E) with n vertices and m edges is stored in a plain text file that contains n+1 lines (excluding comment lines). The first line contains information about the size and the type of the graph, while the remaining n lines contain information for each vertex of G. Any line that starts with \% is a comment line and is skipped.
 
